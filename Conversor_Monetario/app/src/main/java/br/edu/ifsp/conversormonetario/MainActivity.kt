@@ -54,11 +54,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
     private fun convertToDollar(){
 
-        var value = try{
-            inputEditText.text.toString().toDouble()
-        }catch (e: NumberFormatException){
-            0.0
-        }
+        var value = getValue()
 
         value = value / DOLLAR_VALUE
 
@@ -69,16 +65,22 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
     private fun convertToReal(){
 
-        var value = try{
-            inputEditText.text.toString().toDouble()
-        }catch (e: NumberFormatException){
-            0.0
-        }
+        var value = getValue()
 
         value = value * DOLLAR_VALUE
 
         outputTextView.text = "R$ " + df.format(value)
         //outputTextView.text= "R$ $value"
+
+    }
+
+    private fun getValue() : Double{
+
+        return try{
+            inputEditText.text.toString().toDouble()
+        }catch (e: NumberFormatException){
+            0.0
+        }
 
     }
 
