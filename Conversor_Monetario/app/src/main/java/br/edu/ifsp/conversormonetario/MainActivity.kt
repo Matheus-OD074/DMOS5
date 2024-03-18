@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             0.0
         }
 
-        value = value * DOLLAR_VALUE
+        value = value / DOLLAR_VALUE
 
         outputTextView.text = String.format("U$ %.2f", value)
         //outputTextView.text= "U$ $value"
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             0.0
         }
 
-        value = value / DOLLAR_VALUE
+        value = value * DOLLAR_VALUE
 
         outputTextView.text = "R$ " + df.format(value)
         //outputTextView.text= "R$ $value"
