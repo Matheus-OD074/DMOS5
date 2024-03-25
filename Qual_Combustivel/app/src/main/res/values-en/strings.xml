@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">What Fuel?</string>
+    <string name="anwser_ethanol">Choose Ethanol</string>
+    <string name="anwser_gas">Choose Gasoline</string>
+    <string name="message_gas">Price per Liter of Gasoline:</string>
+    <string name="message_ethanol">Price per Liter of Ethanol</string>
+    <string name="button_text">Which one is best?</string>
+</resources>
